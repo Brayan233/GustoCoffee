@@ -10,3 +10,6 @@ app.use(express.static(__dirname + '/dist'));
 // Start the app by listening on the default Heroku port
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
